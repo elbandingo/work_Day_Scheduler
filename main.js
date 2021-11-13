@@ -57,7 +57,7 @@ $(".taskBin").on("click", "p", function(){
   });
 
   //Task needs to be updated
-$(".taskBin").on("blur", "textarea", function() {
+$(".taskBin").on("change", "textarea", function() {
   //get the textareas; current value/text
     var text = $(this)
       .val()
