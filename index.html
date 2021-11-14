@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <span class="font-weight-bold" id="currentDate"></span>
+    </header>
+    <div class="container">
+      <!-- Timeblocks go here -->
+      <div class="row time-block">
+        <!--9AM-->
+        <div class="col-2 hour d-flex align-items-center justify-content-end">9AM</div>
+        <div class="col-9 taskContainer" id="task-9">
+          <p id="taskItem-0">Available</p>
+        </div>
+        <button class="col-1 rounded saveBtn"><i>Save</i></button>
+      </div>
+      <div class="row time-block">
+        <!--10AM-->
+        <div class="col-2 hour d-flex align-items-center justify-content-end">10AM</div>
+        <div class="col-9 taskContainer" id="task-10">
+          <p id="taskItem-1">Available</p>
+        </div>
+        <button class="col-1 rounded saveBtn"><i>Save</i></button>
+      </div>
+      <div class="row time-block">
+        <!--11AM-->
+        <div class="col-2 hour d-flex align-items-center justify-content-end">11AM</div>
+        <div class="col-9 taskContainer" id="task-11">
+          <p id="taskItem-2">Available</p>
+        </div>
+        <button class="col-1 rounded saveBtn"><i>Save</i></button>
+      </div>
+      <div class="row time-block">
+        <!--12PM-->
+        <div class="col-2 hour d-flex align-items-center justify-content-end">12PM</div>
+        <div class="col-9 taskContainer" id="task-12">
+          <p id="taskItem-3">Available</p>
+        </div>
+        <button class="col-1 rounded saveBtn"><i>Save</i></button>
+      </div>
+      <div class="row time-block">
+        <!--1PM-->
+        <div class="col-2 hour d-flex align-items-center justify-content-end">1PM</div>
+        <div class="col-9 taskContainer" id="task-13">
+          <p id="taskItem-4">Available</p>
+        </div>
+        <button class="col-1 rounded saveBtn"><i>Save</i></button>
+      </div>
+      <div class="row time-block">
+        <!--2PM-->
+        <div class="col-2 hour d-flex align-items-center justify-content-end">2PM</div>
+        <div class="col-9 taskContainer" id="task-14">
+          <p id="taskItem-5">Available</p>
+        </div>
+        <button class="col-1 rounded saveBtn"><i>Save</i></button>
+      </div>
+      <div class="row time-block">
+        <!--3PM-->
+        <div class="col-2 hour d-flex align-items-center justify-content-end">3PM</div>
+        <div class="col-9 taskContainer" id="task-15">
+          <p id="taskItem-6">Available</p>
+          
+        </div>
+        <button class="col-1 rounded saveBtn"><i>Save</i></button>
+      </div>
+      <div class="row time-block">
+        <!--4PM-->
+        <div class="col-2 hour d-flex align-items-center justify-content-end">4PM</div>
+        <div class="col-9 taskContainer" id="task-16">
+          <p id="taskItem-7">Available</p>
+        </div>
+        <button class="col-1 rounded saveBtn"><i>Save</i></button>
+      </div>
+      <div class="row time-block">
+        <!--5PM-->
+        <div class="col-2 hour d-flex align-items-center justify-content-end">5PM</div>
+        <div class="col-9 taskContainer" id="task-17">
+          <p id="taskItem-8">Available</p>
+        </div>
+        <button class="col-1 rounded saveBtn"><i>Save</i></button>
+
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
