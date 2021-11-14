@@ -14,6 +14,7 @@ var loadTasks = function(){
     printSavedTasks(tasks)
 }
 
+//print the tasks to each respective time slot during the day on load
 var printSavedTasks = function(){
     //loop through "each" value in the array, and append each p element with their respective saved tasks
     $.each(tasks, function(list,arr){
@@ -23,7 +24,6 @@ var printSavedTasks = function(){
         $("#taskItem-" + list).replaceWith(taskP);
     })
 }
-
 
 
 
@@ -79,7 +79,11 @@ var taskAudit = function() {
         }
     }
 
-}
+};
+
+//set an interval to run the task audit
+setInterval(function(){
+    taskAudit();},1000*60*60);
 
 loadTasks();
 taskAudit();
