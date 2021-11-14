@@ -62,4 +62,24 @@ $(".saveBtn").on("click", function(){
     localStorage.setItem("tasks", JSON.stringify(tasks));
 });
 
+var taskAudit = function() {
+    //get the current time
+    var currentTime = moment().format("HH")
+    //make sure the time is correct for testing
+    console.log(currentTime);
+    //loop through each of the task ID's from 9 to 17 (9 am to 5PM in 24 hour format), check if within same hour. if past, grey, if future, green, if present, red
+    for (var i=9; i < 18; i++) {
+        var taskTime = $("#task-" + i)
+        if(currentTime>i) {
+            $(taskTime).addClass("past");
+        } else if (curentTime === i) {
+            $(taskTime).addClass("present");
+        } else {
+            $(taskTime).addClass("future");
+        }
+    }
+
+}
+
 loadTasks();
+taskAudit();
