@@ -62,6 +62,8 @@ $(".saveBtn").on("click", function(){
     localStorage.setItem("tasks", JSON.stringify(tasks));
 });
 
+
+//taskaudit needed to check if the time is present, past or future.
 var taskAudit = function() {
     //get the current time
     var currentTime = moment().format("HH")
