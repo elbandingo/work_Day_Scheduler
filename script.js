@@ -25,9 +25,6 @@ var printSavedTasks = function(){
     })
 }
 
-
-
-//get the present date to display on the main page on load
 var today = (moment().format("MMMM D, YYYY"))
 $("#currentDate").text(today);
 
@@ -50,6 +47,7 @@ $(".taskContainer").on("blur", "textarea", function() {
     var textInput = $("<p>").addClass("taskItem").text(text);
     $(this).replaceWith(textInput);
 });
+
 
 //saving the tasks to the array, and then saving them to local storage
 $(".saveBtn").on("click", function(){
