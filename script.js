@@ -25,9 +25,6 @@ var printSavedTasks = function(){
     })
 }
 
-
-
-//get the present date to display on the main page on load
 var today = (moment().format("MMMM D, YYYY"))
 $("#currentDate").text(today);
 
@@ -51,6 +48,7 @@ $(".taskContainer").on("blur", "textarea", function() {
     $(this).replaceWith(textInput);
 });
 
+
 //saving the tasks to the array, and then saving them to local storage
 $(".saveBtn").on("click", function(){
     //set the current index to the taskItem p element content that SAVE was clicked on
@@ -62,6 +60,8 @@ $(".saveBtn").on("click", function(){
     localStorage.setItem("tasks", JSON.stringify(tasks));
 });
 
+
+//taskaudit needed to check if the time is present, past or future.
 var taskAudit = function() {
     //get the current time
     var currentTime = moment().format("HH")
